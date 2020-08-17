@@ -15,21 +15,19 @@
                 <center><h3>Make A New Blog</h3></center>
                 <textarea id="post" class="form-control" placeholder="Write your story..."></textarea>
 
-               <!-- <input type="file" class="form-control" id="image" accept="images/*">-->
-               
-               <div class="uk-margin">
-                <div uk-form-custom>
-                  <div class="text-center">
-                    <input type="file">
-                    <button class="uk-button uk-button-default" type="button" tabindex="-1">Select File</button>
-                
-               
+                <!--<input type="file" class="form-control" id="image" accept="images/*">-->
 
+                <div class="uk-margin" uk-margin>
+                  <div uk-form-custom="target: true">
+                      <input type="file" class="form-control" id="image" accept="images/*">
+                      <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" disabled>
+                  </div>
+               </div>
+
+                <div class="text-center">
                     <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
                 </div>
-              </div>
-
-              </div>
+              
 
             </form>
          </div>
